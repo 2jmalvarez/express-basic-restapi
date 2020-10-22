@@ -76,7 +76,7 @@ router.post('/ListaDocumentos', async (req, res) => {
                 let doc = response.entry[0];
                 let url = doc.resource.content[0].attachment.url;
                 let IPSCompleto = await documentServices.ContenidoDocumento(url)
-                composition = IPSCompleto.entry[0].resource;
+                composition = IPSCompleto!= undefined ? IPSCompleto['entry'][0].resource:res.json([{total:'No hay documentos'}]);
                 AllSec = [];
                 sections = composition.section;
                 sections.forEach(section => {
