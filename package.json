@@ -11,13 +11,18 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@asymmetrik/node-fhir-server-core": "^2.2.2",
     "axios": "^0.20.0",
     "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dateformat": "^3.0.3",
     "express": "^4.16.4",
+    "jsoning": "^0.8.15",
     "jsonwebtoken": "^8.5.1",
     "morgan": "^1.9.1",
     "node-fetch": "^2.3.0",
-    "underscore": "^1.9.1"
+    "underscore": "^1.9.1",
+    "uuid": "^7.0.3"
   },
   "devDependencies": {
     "nodemon": "^1.18.9"

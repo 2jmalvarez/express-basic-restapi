@@ -241,4 +241,4 @@ function generoIngles(params) {
     return 'female'
 }
 
-module.exports = { MatchPaciente, FederarPaciente, PatientLocation }
+module.exports = { MatchPaciente, FederarPaciente, PatientLocation ,generoIngles, GivenSep}
